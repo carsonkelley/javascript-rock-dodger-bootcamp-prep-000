@@ -82,10 +82,10 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-     console.log(rock.style.top);
+     console.log(positionToInteger(rock.style.top));
     if(checkCollision(rock)) {
       endGame();
-    } else if (rock.style.top < 380) {
+    } else if (positionToInteger(rock.style.top) < 380) {
       rock.style.top += 2;
     } else {
       //rock.remove();
