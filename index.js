@@ -87,7 +87,7 @@ function createRock(x) {
     } else if (rock.style.top < 380) {
       rock.style.top += 2;
     } else {
-      rock.remove();
+      //rock.remove();
     }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
