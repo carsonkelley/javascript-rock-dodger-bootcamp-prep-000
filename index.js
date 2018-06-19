@@ -86,7 +86,7 @@ function createRock(x) {
     if(checkCollision(rock)) {
       endGame();
     } else if (positionToInteger(rock.style.top) < 380) {
-      rock.style.top += 2;
+      rock.style.top = 2;
     } else {
       //rock.remove();
     }
