@@ -84,7 +84,9 @@ function createRock(x) {
      */
     if(checkCollision(rock)) {
       endGame();
-    } else if ()
+    } else if (rock.style.top < 380) {
+      rock.style.top += 2;
+    }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
