@@ -87,7 +87,7 @@ function createRock(x) {
     } else if (rock.style.top < 380) {
       rock.style.top += 2;
     } else {
-      
+      rock.remove();
     }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
@@ -101,7 +101,7 @@ function createRock(x) {
   }
 
   // We should kick of the animation of the rock around here
-
+  window.requestAnimationFrame(moveRock);
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
